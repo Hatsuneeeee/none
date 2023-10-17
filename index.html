@@ -1,76 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-    <div class="container">
-        <header class="head">
-            <img src="image/tobiz_logo_def_black.png">
-            <div class="header">
-                <ul class="nav">
-                    <li>ПОЧЕМУ МЫ</li>
-                    <li>КАТАЛОГ</li>
-                    <li>ОТЗЫВЫ</li>
-                    <li>КОНТАКТЫ</li>
-                </ul>
-                <span>+7 800 333 22 33</span>
-            </div>
-        </header>
-    </div>
-    <div class="NicePicture">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- HEADER -->
         <div class="container">
-            <div class="head-text">
-                <h1>МАГАЗИН СТРОИТЕЛЬНЫХ<br/>
-                    МАТЕРИАЛОВ С ДОСТАВКОЙ</h1>
-                <p>Добро пожаловать на наш сайт. Мы занимаемся продажей и<br/>
-                    доставкой строительных материалов уже на протяжении 10 лет. </p>
-                <a>Перейти в каталог</a>
+            <header class="main-header">
+                <img src="images/tobiz_logo_def_black.png" alt="logo">
+                <div class="header-info-and-contacts">
+                    <nav class="navigation">
+                        <ul>
+                            <li><a href="#">ПОЧЕМУ МЫ</a></li>
+                            <li><a href="#">КАТАЛОГ</a></li>
+                            <li><a href="#">ОТЗЫВЫ</a></li>
+                            <li><a href="#">КОНТАКТЫ</a></li>
+                        </ul>
+                    </nav>
+                    <span>+7 800 333 22 33</span>
+                </div>
+            </header>
+        </div>
+
+        <!-- MAIN INFO -->
+        <div class="main-info">
+            <div class="container main-info-container">
+                <div class="main-info-content">
+                    <h1>МАГАЗИН СТРОИТЕЛЬНЫХ МАТЕРИАЛОВ С ДОСТАВКОЙ</h1>
+                    <p>Добро пожаловать на наш сайт. Мы занимаемся продажей и доставкой строительных материалов уже на протяжении 10 лет. </p>
+                    <a href="#">Перейти в каталог</a>
+                </div>
             </div>
-        </div>       
-    </div>
-   <div>
-        <main>
-            <div class="main-info">
+        </div>
+
+        <!-- POPULAR PRODUCTS -->
+        <div class="container">
+            <div class="popular-products">
                 <div>
                     <h1>Популярные товары</h1>
                     <p>В каталоге нашего магазина представлено большое количество строительных материалов</p>
                 </div>
-                <div class="container">
-                    <div class="goods">
-                        <div class="clay">
-                            <div class="padding-normal">
-                                <img src="image/1/40fdd5984a389b5deda13fa4639e6121.png">
-                                <h3>ГЛИНА</h3>
-                                <p>Материалы, применяемые в строительстве для постройки, ремонта и реконструкций сооружений</p>
-                                <h4>490 руб.</h4>
-                                <a>купить</a>
-                            </div>
-                        </div>
-                        <div class="sand">
-                            <div class="padding-normal">
-                                <img src="image/1/d3813d1b1e8ed121ca78ec69eeb00325.jpg">
-                                <h3>ПЕСОК</h3>
-                                <p>Материалы, применяемые в строительстве для постройки, ремонта и реконструкций сооружений</p>
-                                <h4>540 руб.</h4>
-                                <a>купить</a>
-                            </div>
-                        </div>
-                        <div class="gravel">
-                            <div class="padding-normal">
-                                <img src="image/1/744cef4e91aa3b094d5e2521cc907af3.jpg">
-                                <h3>ГРАВИЙ</h3>
-                                <p>Материалы, применяемые в строительстве для постройки, ремонта и реконструкций сооружений</p>
-                                <h4>590 руб.</h4>
-                                <a>купить</a>
-                            </div>
-                        </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="images/cards/40fdd5984a389b5deda13fa4639e6121.png">
+                        <h3>ГЛИНА</h3>
+                        <p>Материалы, применяемые в строительстве для постройки, ремонта и реконструкций сооружений</p>
+                        <span>490 руб.</span>
+                        <a href="#">купить</a>
+                    </div>
+                    <div class="card">
+                        <img src="images/cards/d3813d1b1e8ed121ca78ec69eeb00325.jpg">
+                        <h3>ПЕСОК</h3>
+                        <p>Материалы, применяемые в строительстве для постройки, ремонта и реконструкций сооружений</p>
+                        <span>540 руб.</span>
+                        <a href="#">купить</a>
+                    </div>
+                    <div class="card">
+                        <img src="images/cards/744cef4e91aa3b094d5e2521cc907af3.jpg">
+                        <h3>ГРАВИЙ</h3>
+                        <p>Материалы, применяемые в строительстве для постройки, ремонта и реконструкций сооружений</p>
+                        <span>590 руб.</span>
+                        <a href="#">купить</a>
                     </div>
                 </div>
             </div>
-        </main>
-   </div>
-</body>
+        </div>
+
+
+        <!-- Construction materials store -->
+        <div class="shop">
+            <div class="container">
+                <div class="store">
+                    <h1>Магазин строительных материалов</h1>
+                    <p>Изделия на основе гипсовых вяжущих имеют сравнительно небольшую плотность, достаточную прочность, несгораемы, обладают высокими звуко- и тепло изоляционными свойствами, хорошо поддаются обработке (распиливанию, сверлению). Для повышения влаго- и водостойкости гипсовых изделий при их изготовлении используют гипсо-цементно-пуццолоновые и гипсошлакоцементнопуццолановые вяжущие, покрывают их водостойкими водонепроницаемыми защитными красками или пастами.</p>
+                    <p>Изделия на основе гипсовых вяжущих изготавливают из гипсового теста, гипсового раствора или гипсобетона с минеральными заполнителями (песок, керамзитовый гравий…) и органическими наполнителями (древесные опилки, стружка, камыш…). Гипсовые и гипсобетонные изделия обладают значительной хрупкостью, поэтому в них при их изготовлении вводят армирующие материалы в виде деревянных реек, камыша, металлической арматуры (сетка, проволока…).</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Why choose us -->
+        <div class="Causes">
+            <div class="container">
+                <h1>Почему выбирают именно нас</h1>
+                <p>Причины, по которым к нам обращаются многочисленные клиенты</p>
+                <div class="Reasons">
+                    <div class="DELIVERY">
+                        <img src="https://171395.lp.tobiz.net/cicons/007-delivery-truck-1.svg">
+                        <h3>БЫСТРАЯ ДОСТАВКА</h3>
+                        <p>Наша компания сотрудничает с сервисами доставки, поэтому заказы приходят к клиентам быстро</p>
+                    </div>
+                    <div class="PRICE">
+                        <img src="https://171395.lp.tobiz.net/cicons/037-package-9.svg">
+                        <h3>ДОСТУПНАЯ СТОИМОСТЬ</h3>
+                        <p>В нашем магазине любой желающий может купить строительные материалы по самым доступным ценам</p>
+                    </div>
+                    <div class="DELIVERY">
+                        <img src="https://171395.lp.tobiz.net/cicons/030-package-6.svg">
+                        <h3>ОПЫТ РАБОТЫ БОЛЕЕ 10 ЛЕТ</h3>
+                        <p>Наша компания занимается продажей и доставкой строительных материалов уже на протяжении более 10 лет</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Special offers -->
+        <div class="offers">
+            <div class="container">
+                <h1>Специальные предложения</h1>
+                <p id="title">Каждый месяц в нашем магазине проводятся различные скидки и акции</p>
+                <div class="slides">
+                    <div class="slide">
+                        <img src="images/slide/bf3717aa015166a011218b34cb071924.jpeg">
+                        <h4>Скидка 20% на кирпичи</h4>
+                        <p>Только до конца месяца в нашем магазине действует специальная акция – скидка до 20% на кирпичи</p>
+                        <a href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide/5441d9fd9da5835ef628fb4b60f03631.jpg">
+                        <h4>Бесплатная доставка</h4>
+                        <p>Только до конца месяца в нашем магазине действует специальная акция – бесплатная доставка</p>
+                        <a href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide/8a9024d5b657b6ff9fb9045f5be362a5.jpg">
+                        <h4>Скидка 10% на сухие смеси</h4>
+                        <p>Только до конца месяца в нашем магазине действует специальная акция – скидка 10% на сухую смесь</p>
+                        <a href="#">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- BUILDING MATERIALS WITH UP TO 20% DISCOUNT -->
+        <div class="application">
+            <div class="container">
+                <div class="up">
+                    <div class="order">
+                        <h1>СТРОЙМАТЕРИАЛЫ СО СКИДКОЙ ДО 20%</h1>
+                        <p>Успейте заказать в нашем магазине строительные материалы со скидкой до 20%. Для этого вам необходимо отслеживать проводимые нашей компанией скидки и акции. Чтобы заказать стройматериалы, оставьте заявку на сайте или позвоните по номеру 8 800 333 22 33</p>
+                    </div>
+                    <div class="pre-order">
+                        <h2>Оставьте заявку на сайте</h2>
+                        <p>Введите имя</p>
+                        <input type="text" placeholder="  Введите имя">
+                        <p>Введите номер телефона</p>
+                        <p>Наш менеджер Вам перезвонит</p>
+                        <input type="text" placeholder="  xxx-xxx-xxx"><br>
+                        <a href="#" id="button">Отправить</a>
+                        <!-- <p>Нажимая на кнопку,
+                            Вы принимаете <a href="#">Положение</a> и <a href="#">Согласие</a>
+                            на обработку персональных данных.
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

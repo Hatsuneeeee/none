@@ -1,118 +1,267 @@
+/* ROOT */
 body {
     font-family: sans-serif;
     padding: 0;
     margin: 0;
+    background-color: rgb(248, 248, 248);
 }
 .container{
     max-width: 1200px;
     margin: auto;
 }
+a{
+    text-decoration: none;
+}
 
-/* header */
-.head {
+/* HEADER */
+.main-header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 15px 0;
 }
-.head img {
-    height: 50px;
-}
-.header {
+.main-header .header-info-and-contacts{
     display: flex;
     align-items: center;
-    /* padding: 0 30px; */
 }
-.head ul {
-    display: flex;  
+.main-header .navigation ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: circle;
 }
-.head li {
-    margin: 0 15px;
+.main-header .navigation li{
+    margin: 10px;
 }
-.head span {
-   margin: 15px 5px;
+.main-header .navigation a{
+    color: black;
 }
-.nav li:hover {
-    margin: 0px 15px;
+.main-header .navigation a:hover{
     border-bottom: 1px black solid;
 }
 
-/* main-header */
-.NicePicture {
-    background: url(image/Wolf\ Hunting\ Prey\ \(3440x1440\).jpg) no-repeat; 
+/* MAIN INFO */
+.main-info {
+    background: url("images/Counter\ Strike\ 2\ \(3440x1440\).jpg") no-repeat;
     background-size: 100%;
-    margin: 40px 0;
-    padding: 0%;
-    height: 600px;    
+    color: white;
 }
-.NicePicture h1 {
-    color: rgb(255, 255, 255);
-    
+.main-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.NicePicture p {
-    color: rgb(255, 255, 255);
+.main-info-content{
+    padding: 175px 0;
+    width: 70%;
+    font-size: 150%;
+    transform: translateY(8%);
 }
-.head-text {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    font-size: 30px;
+.main-info-content h1{
+    margin: 0;
 }
-.head-text a {
+.main-info-content p{
+    margin: 35px 0;
+}
+.main-info-content a {
     color: white;
     background-color: #ed7a00;
-    padding: 14px 100px;
-    font-size: 20px;
-    font-weight: normal;
+    padding: 15px 80px;
+    font-size: 80%;
 }
 
-/* main */
-/* Популярные товары */
-.main-info {
+/* POPULAR PRODUCTS */
+.popular-products {
     text-align: center;
-    font-size: 20px;
+    font-size: 130%;
+    padding: 50px 0;
 }
-.main-info h1 {
+.popular-products h1 {
     font-weight: 800;
 }
-.goods {
+.cards {
     display: flex;
 }
-.goods a {
-    color: white;
-    background-color: #ed7a00;
-    padding: 7px 50px;
+.card {
+    margin: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px #E8E5E5 solid;
+    width: calc(100% / 3 - (10px * 2 + 25px * 2));
 }
-.goods img {
+.card img {
+    width: 75%;
     border-radius: 50%;
 }
-.clay {
+.card span{
+    font-weight: 700;
+    margin: 15px 0;
+}
+.card a {
+    color: white;
+    background-color: #ed7a00;
+    padding: 8px 50px;
+    text-decoration: none;
+}
+
+
+/* Construction materials store */
+.shop {
+    background: white;
+    font-size: 20px;
+}
+.shop p {
+    font-weight: 100;
+    color: rgb(104, 104, 104);
+}
+.shop h1 {
+    text-align: center;
+    font-weight: 800;
+    margin: 50px;
+}
+.store {
+    margin: 0 70px;
+    padding: 50px 0;
+}
+
+
+/* Why choose us */
+.Causes {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 100px;
+}
+.Reasons {
+    display: flex;
+}
+.Causes img {
+    width: 150px;
+}
+.Causes p {
+    font-weight: 100;
+    color: rgb(104, 104, 104);
+}
+.DELIVERY {
+    margin: 10px 10px 30px 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px #E8E5E5 solid;
+    width: calc(100% / 3 - (10px * 2 + 25px * 2));
+}
+.PRICE {
     margin: 10px;
-    padding: 10px;
-    border: 1px black solid;
-    border-color: #E8E5E5;
-    height: 520px;
-    width: 500px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px #E8E5E5 solid;
+    width: calc(100% / 3 - (10px * 2 + 25px * 2));
 }
-.sand {
+
+
+/* Special offers */
+.offers {
+    background: white;
+    text-align: center;
+    padding: 50px 30px 50px 30px;
+}
+.offers h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+#title {
+    font-weight: 100;
+    font-size: 23px;
+    margin: 15px;
+    font-weight: 100;
+}
+.slides h4 {
+    font-size: 20px;
+}
+.slides {
+    display: flex;
+}
+.slide {
     margin: 10px;
-    padding: 10px;
-    border: 1px black solid;
-    border-color: #E8E5E5;
-    height: 520px;
-    width: 500px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.gravel {
-    margin: 10px;
-    padding: 10px;
-    border: 1px black solid;
-    border-color: #E8E5E5;
-    height: 520px;
-    width: 500px;
+.slide p {
+    margin-top: 0;
+    padding: 5px 50px;
 }
-.padding-normal {
-    padding: 15px;
+.slide a {
+    text-decoration: none;
+    color: white;
+    background: #ed7a00;
+    font-weight: 300;
+    padding: 13px 85px;
 }
 
 
+/* BUILDING MATERIALS WITH UP TO 20% DISCOUNT */
+.application {
+    background: url(images/SL-030722-49030-02.jpg) no-repeat;
+    background-size: 100%;
+    height: 660px;
+}
+.up {
+    display: flex;
+}
+.order {
+    text-align: left;
+    width: 750px;
+    color: white;
+    padding-top: 40px;
+}
+.order h1 {
+    font-size: 50px;
+    font-weight: 900;
+    padding: 10px 0 30px 0;
+}
+.order p {
+    font-size: 25px;
+    font-weight: 100;
+}
+.pre-order {
+    background: rgb(234, 234, 234);
+    width: 330px;
+    height: 400px;
+    border: 6px #ed7a00 solid;
+    padding: 40px;
+    margin: 80px 30px 0 30px;
+}
+.pre-order h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 23px;
+    margin: 5px 0 5px 0;
+    padding: 0;
+}
+.up input {
+    width: 310px;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px #bfbfbf solid;
+    margin: 5px 0;
+}
+.pre-order {
+    font-weight: 100;
+}
+#button {
+    text-decoration: none;
+    color: white;
+    background: #ed7a00;
+    font-weight: 300;
+    padding: 17px 118px;
 
-
+}
+.pre-order p {
+    margin: 15px 0;
+}
