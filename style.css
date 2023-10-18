@@ -275,7 +275,8 @@ a{
 
 /* Catalog of building materials */
 .Catalog {
-    text-align: center
+    text-align: center;
+    margin: 0 130px;
 }
 .store-catalog h1 {
     font-size: 45px;
@@ -290,8 +291,34 @@ a{
 }
 .material {
     width: 500px;
-    height: 350px;
+    height: 270px;
+    display: flex;
+    text-align: left;
+    padding: 10px 70px 70px 10px;
+    border: 1px #E8E5E5 solid;
+    margin: 20px 10px;
+}
+.material h3 {
+    font-size: 23px;
+    font-weight: 200; 
+}
+.material p {
+    font-size: 20px;
+    font-weight: 100;
+}
+.material span {
+    font-size: 30px;
+    font-weight: 500;
+}
+.material a {
+    color: white;
+    background: #ed7a00;
+    padding: 11px 75px;
+    margin: 40px 0;
+    font-size: 20px;
+    font-weight: 100;
 }
 .material img {
     border-radius: 50%;
+    margin: 30px;
 }
