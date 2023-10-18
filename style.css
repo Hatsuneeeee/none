@@ -260,9 +260,38 @@ a{
     background: #ed7a00;
     font-weight: 300;
     padding: 17px 118px;
-
 }
-.pre-order p {
-    margin: 15px 0;
-    /* dfgdfgdfgfdg */
+#paragraph {
+    margin: 30px 0;
+}
+#note {
+    font-size: 13px;
+}
+.pre-order a {
+    color: #ed7a00;
+    text-decoration: underline;
+}
+
+
+/* Catalog of building materials */
+.Catalog {
+    text-align: center
+}
+.store-catalog h1 {
+    font-size: 45px;
+    font-weight: 900;
+}
+.store-catalog p {
+    font-size: 25px;
+    color: #5b5b5b;
+}
+.section {
+    display: flex;
+}
+.material {
+    width: 500px;
+    height: 350px;
+}
+.material img {
+    border-radius: 50%;
 }
