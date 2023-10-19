@@ -207,23 +207,23 @@ a{
 
 /* BUILDING MATERIALS WITH UP TO 20% DISCOUNT */
 .application {
-    background: url(images/SL-030722-49030-02.jpg) no-repeat;
+    background: url('images/SL-030722-49030-02.jpg') no-repeat;
     background-size: 100%;
-    height: 660px;
 }
 .up {
-    display: flex;
+    display: grid;
+    grid-template-columns: 65% 1fr;
+    padding: 75px 0;
 }
 .order {
     text-align: left;
-    width: 750px;
     color: white;
-    padding-top: 40px;
+    width: auto;
 }
 .order h1 {
     font-size: 50px;
     font-weight: 900;
-    padding: 10px 0 30px 0;
+    margin-top: 0;
 }
 .order p {
     font-size: 25px;
@@ -231,11 +231,12 @@ a{
 }
 .pre-order {
     background: rgb(234, 234, 234);
-    width: 330px;
-    height: 400px;
     border: 6px #ed7a00 solid;
     padding: 40px;
-    margin: 80px 30px 0 30px;
+}
+.recall{
+    font-size: 12px;
+    color: #5b5b5b;
 }
 .pre-order h2 {
     text-align: center;
@@ -245,26 +246,27 @@ a{
     padding: 0;
 }
 .up input {
-    width: 310px;
-    height: 43px;
     border-radius: 5px;
     border: 1px #bfbfbf solid;
     margin: 5px 0;
+    padding: 20px 10px;
+    width: calc(100% - 10px * 2);
 }
 .pre-order {
     font-weight: 100;
 }
-#button {
-    text-decoration: none;
+.pre-order button {
     color: white;
     background: #ed7a00;
     font-weight: 300;
-    padding: 17px 118px;
+    font-size: 18px;
+    padding: 17px;
+    outline: none;
+    border: none;
+    width: 100%;
+    margin: 20px 0;
 }
-#paragraph {
-    margin: 30px 0;
-}
-#note {
+.note {
     font-size: 13px;
 }
 .pre-order a {
@@ -287,11 +289,10 @@ a{
     color: #5b5b5b;
 }
 .section {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .material {
-    width: 500px;
-    height: 270px;
     display: flex;
     text-align: left;
     padding: 10px 70px 70px 10px;
@@ -322,3 +323,108 @@ a{
     border-radius: 50%;
     margin: 30px;
 }
+
+
+/* Terms of payment and delivery */
+.Conditions {
+    background: white;
+    padding: 5% 12% 5% 12%;
+    margin-top: 100px;
+}
+.Conditions h1 {
+ text-align: center;
+ font-size: 40px;
+ font-weight: 900;
+}
+.Conditions p {
+    font-size: 18px;
+    color: #5a5a5a;
+}
+.Conditions ul {
+    margin: 15px;
+}
+
+
+/* Reviews from our clients */
+.clients {
+    display: flex;
+    text-align: center;
+}
+.Reviews {
+    margin: 5%;
+}
+.Reviews h1 {
+ text-align: center;
+ font-size: 40px;
+ font-weight: 900;
+}
+.Reviews p {
+    font-size: 24px;
+    text-align: center;
+    color: #5a5a5a;
+}
+.clients img {
+    border-radius: 50%;
+}
+.clients h3 {
+    text-align: center;
+    font-weight: 200;
+}
+.clients p {
+    font-size: 19px;
+    text-align: center;
+    color: #5a5a5a;
+}
+.client {
+    border: 1px #bfbfbf solid;
+    margin: 13px;
+    padding: 20px;
+}
+
+
+/* Still have questions? Leave a request on the website */
+.questions {
+    background: white;
+    padding: 7% 12% 7% 12%;
+}
+.filling {
+    border: 5px #ed7a00 solid;
+    padding: 3% 2%;
+}
+.filling h1 {
+    text-align: center;
+    font-weight: 500;
+}
+.filling input {
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid silver;
+    outline: none;
+    width: 220px;
+    margin: 0 10px;
+    padding: 15px 0; 
+    caret-color: #ed7a00; 
+}
+.filling input:focus {
+    border-color: #ed7a00;
+} 
+.filling a {
+    color: white;
+    background: #ed7a00;
+    font-size: 25px;
+    padding: 10px 40px 10px 40px;
+    margin: 0 15px;
+}
+.postscriptum {
+    font-size: 15px;
+}
+.postscriptum a {
+    font-size: 15px;
+    background: white;
+    color: #ed7a00;
+    padding: 0;
+    margin: 0;
+    text-decoration: underline;
+}
+
+
